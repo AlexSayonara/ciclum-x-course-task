@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Specific book</title>
+</head>
+<body>
+	<header class="header">
+		<p>JS BAND STORE/Your full name</p>
+		
+		<nav class="header__nav nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link"></a>Homepage</li>
+				<li class="nav__item"><a href="#" class="nav__link"></a>Discount</li>
+				<li class="nav__item"><a href="#" class="nav__link"></a>Top Books</li>
+			</ul>
+			<div class="header__cart cart" tabindex="0">
+				<div class="cart__image">
+					<img width="40" height="40" src="/img/cart.png" alt="cart">
+					<span class="cart__quantity">0</span>
+				</div>
+				<div class="cart__content">
+					<ul class="cart-content_list">
+						<li class="cart-content_item">
+							<article class="cart-content__product cart-product">
+								<img width="100" height="150" src="/img/kafka.jpg" alt="Kafka" class="cart-product__img">
+								<div class="cart-product__text">
+									<h3 class="cart-product__title">Kafka on the shore</h3>
+									<span class="cart-product__price">19,99$</span>
+								</div>
+								<button class="cart-product__delete" aria-label="Delete"></button>
+							</article>
+						</li>
+					</ul>
+					<div class="cart-content__bottom">
+						<div class="cart-content__fullprice">
+							<span>Total:</span>
+							<span class="fullprice">99,95$</span>
+						</div>
+						<button class="cart-content__btn btn">Cart overview</button>
+					</div>
+				</div>
+			</div>
+			<button class="button-81" >Sign-Out</button>
+		</nav>
+	</header>
+	<main>
+		<div class="book_img">
+				<img width="400px" height="450px" src="/img/kafka.jpg" alt="">
+			</div>
+		<div class="container">
+			
+				<div class="description">	
+					<p><span>Description:</span><br> 
+						Kafka on the Shore demonstrates Murakami's typical blend of popular culture, mundane detail, magical realism, suspense, humor, an involved plot, and potent sexuality. It also features an increased emphasis on Japanese religious traditions, particularly Shinto.</p>
+				</div>
+					<div class="book">
+							<p><span>Book name:</span> "Kafka on the shore"</p><br>
+							<p><span>Book author:</span> Haruki Murakami</p><br>
+							<p><span>Book tags:</span> novel, dystopia, essay</p><br>
+					</div>		
+							<div class="price">	
+								<p>Price:<span>19,99$</span></p>
+								<p>Count</p>
+								<div class="number" data-step="1" data-min="1" data-max="100">
+									<input class="number-text" type="text" name="count" value="1">
+									<a href="#" class="number-minus">−</a>
+									<a href="#" class="number-plus">+</a>
+							</div>
+							</div>	
+							<button class="plus_book" data-id="kafkaMurakami">
+								Add to cart
+							</button>
+			</div>	
+			</main>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
